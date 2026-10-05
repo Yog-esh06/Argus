@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #070b14;
+  --panel: rgba(16, 24, 39, 0.9);
+  --panel-alt: rgba(15, 23, 42, 0.92);
+  --muted: #94a3b8;
+  --line: rgba(148, 163, 184, 0.2);
+  --cyan: #22d3ee;
+  --green: #34d399;
+  --amber: #fbbf24;
+  --orange: #f97316;
+  --red: #ef4444;
+  --magenta: #d946ef;
+  --violet: #8b5cf6;
+}
+
+html, body {
+  background: radial-gradient(circle at top, rgba(45, 212, 191, 0.18), transparent 30%), #070b14;
+  color: #f1f5f9;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.45);
+}
+
+.metric {
+  color: #f1f5f9;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
